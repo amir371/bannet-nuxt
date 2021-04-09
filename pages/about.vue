@@ -12,11 +12,11 @@
     <p>09370402434</p>
   </div>
   <div class="number5ragham">
-    <p>2</p>
-    <p>6</p>
-    <p>9</p>
-    <p>4</p>
-    <p>5</p>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
   </div>
   <div class="titlesunder">
     <div class="mojadadpayamak">ارسال مجدد پیامک</div>
@@ -41,7 +41,6 @@ body{
   left: 0;
   top: 0;
   padding: 10px;
-  color: blueviolet;
 }
 .top {
   margin-top: 10rem;
@@ -52,7 +51,7 @@ body{
   color: $third_text_color;
 }
 .top p{
-  color: blueviolet;
+  color: $blue_color;
 }
 .center {
   margin-top: 100px;
@@ -71,7 +70,7 @@ body{
   display: flex;
   border-radius: 20px;
   justify-content: center;
-  background: rgba(137, 43, 226, 0.151);
+  background: rgba(137, 43, 226, 0.062);
   width: 35%;
   margin-left: auto;
   margin-right: auto;
@@ -82,22 +81,29 @@ body{
   height: 20px;
 }
 .phone p{
-   color: rgb(137, 43, 226);
+   color: $blue_color;
 }
 .number5ragham{
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.number5ragham p{
+.number5ragham input{
   margin-right: 5px;
    background: #F5F5F5;
    border-radius: 15px;
-   width: 50px;
-   height: 50px;
+   width: 45px;
+   height: 45px;
    color: $third_text_color;
    text-align: center;
    font-size: 30px;
+}
+.number5ragham input:hover{
+  border-bottom: 2px solid $blue_color;
+  border-radius: 15px;
+}
+input:focus{
+    outline: none;
 }
 .titlesunder{
   display: flex;
@@ -112,7 +118,7 @@ body{
   color: $third_text_color;
 }
 .mojadadpayamak{
-  color: blueviolet;
+  color: $blue_color;
 }
 
 .button{
@@ -122,9 +128,9 @@ body{
   left: 0;
   margin-right: 20px;
   margin-left: 20px;
-  border: 2px solid blueviolet;
-  border-radius: 15px;
-  background-color: blueviolet;
+  border: 2px solid $blue_color;
+  border-radius: 10px;
+  background-color: $blue_color;
   color: white;
   text-align: center;
   padding: 10px;

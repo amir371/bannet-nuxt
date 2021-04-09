@@ -9,10 +9,9 @@
     <p>:شماره موبایل</p>
     <div >
       <input type="text" placeholder="091******">
-
     </div>
   </div>
-  <p class="ghanin">مطالعه قوانین و مقررات</p>
+  <p class="ghavnin">مطالعه قوانین و مقررات</p>
   <div class="button">
     <NuxtLink to="/about">دریافت کد</NuxtLink>
   </div>
@@ -32,7 +31,6 @@ body{
   left: 0;
   top: 0;
   padding: 10px;
-  color: blueviolet;
 }
 .center {
   margin-top: 10rem;
@@ -40,9 +38,10 @@ body{
 }
 .center h1{
   font-size: 30px;
+  color: $third_text_color;
 }
 .center p{
-  color: blueviolet;
+  color: $blue_color;
 }
 .inputnumber {
   margin-top: 100px;
@@ -59,14 +58,23 @@ body{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   text-align: right;
+  display: flex;
+  justify-content: center;
 }
-.ghanin{
+input:focus{
+    outline: none;
+}
+.inputnumber div:hover{
+  border-bottom: 2px solid $blue_color;
+}
+.ghavnin{
   position: fixed;
   bottom: 70px;
   right: 0;
   left: 0;
   text-align: center;
   color: $third_text_color;
+  font-size: 10px;
 }
 .button{
   position: fixed;
@@ -75,9 +83,9 @@ body{
   left: 0;
   margin-right: 20px;
   margin-left: 20px;
-  border: 2px solid blueviolet;
-  border-radius: 15px;
-  background-color: blueviolet;
+  border: 2px solid $blue_color;
+  border-radius: 10px;
+  background-color: $blue_color;
   color: white;
   text-align: center;
   padding: 10px;
